@@ -19,7 +19,7 @@ export const signup = async (req, res) => {
 
         const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "1d" });
 
-        res.cookie("token", token, { httpOnly: true });
+        res.cookie("token", token, { httpOnly: true, secure: true, sameSite: "none" });
 
         user.password = null;
         return res.json({ success: true, userData: user });
@@ -49,7 +49,7 @@ export const login = async (req, res) => {
 
         const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "1d" });
 
-        res.cookie("token", token, { httpOnly: true });
+        res.cookie("token", token, { httpOnly: true, secure: true, sameSite: "none" });
 
         user.password = null;
         return res.json({ success: true, userData: user });
