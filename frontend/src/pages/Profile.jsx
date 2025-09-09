@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { User } from "lucide-react";
-import { UserContext } from "../context/userContext";
+import { UserContext } from "../context/UserContext";
 import { useLocation } from "react-router";
 
 export default function Profile() {

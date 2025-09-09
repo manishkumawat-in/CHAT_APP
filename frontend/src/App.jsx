@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import { ToastContainer } from "react-toastify";
 import { useContext } from "react";
-import { UserContext } from "./context/userContext";
+import { UserContext } from "./context/UserContext.jsx";
 
 function App() {
   const { userData } = useContext(UserContext);

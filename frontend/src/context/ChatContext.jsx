@@ -2,7 +2,7 @@ import axios from "axios";
 import { createContext, useEffect } from "react";
 import { useState } from "react";
 import { useContext } from "react";
-import { UserContext } from "./userContext";
+import { UserContext } from "./UserContext";
 import { io } from "socket.io-client";
 
 export const ChatContext = createContext();

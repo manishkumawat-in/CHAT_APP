@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Send, MoreVertical, Search } from "lucide-react";
 import { useContext } from "react";
 import { ChatContext } from "../context/ChatContext";
-import { UserContext } from "../context/userContext";
+import { UserContext } from "../context/UserContext";
 import { useNavigate } from "react-router";
 
 function ChatPanel() {

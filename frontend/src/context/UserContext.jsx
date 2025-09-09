@@ -1,7 +1,6 @@
 import { createContext, useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
-import { io, Socket } from "socket.io-client";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router";
 
