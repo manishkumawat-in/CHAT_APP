@@ -15,29 +15,6 @@ export const UserContextProvider = ({ children }) => {
   const [socket, setSocket] = useState();
   const navigate = useNavigate();
 
-  // const connectSocket = () => {
-  //   if (!userData || socket?.connected) return;
-
-  //   const newSocket = io(backendurl, {
-  //     query: { userId: userData._id },
-  //   });
-
-    
-  //   newSocket.on("getOnlineUsers", (userIds) => {
-  //     console.log("Socket connected");
-  //     setOnlineUsers(userIds);
-  //   });
-
-  //   newSocket.on("newMessage", (data) => {
-  //     console.log("New message received:", data);
-  //   });
-  //   setSocket(newSocket);
-
-  //   return () => {
-  //     newSocket.disconnect();
-  //   };
-  // };
-
   const getUserData = async () => {
     try {
       const { data } = await axios.get(`${backendurl}/api/user/getuser`, {
