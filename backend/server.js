@@ -13,7 +13,7 @@ const app = express();
 const server = http.createServer(app);
 connectdb();
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://buddy-llgk.onrender.com/",
   methods: ["GET", "POST"],
   credentials: true
 }))
