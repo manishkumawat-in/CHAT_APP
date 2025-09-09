@@ -23,7 +23,7 @@ app.use(cookieParser());
 
 export const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://buddy-llgk.onrender.com",
     methods: ["GET", "POST"],
   },
 });
